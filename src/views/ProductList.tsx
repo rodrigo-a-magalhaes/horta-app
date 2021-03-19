@@ -46,7 +46,7 @@ export function ProductList() {
 
         <Grid container spacing={2}>
           {products.map(product => (
-            <Grid item xs={12} sm={6} md={4} lg={3} xl={2} >
+            <Grid key={product.id} item xs={12} sm={6} md={4} lg={3} xl={2} >
               <CardProduct product={product} />
             </Grid>
           ))}

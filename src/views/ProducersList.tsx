@@ -35,7 +35,7 @@ function ProducersList() {
         </Typography>
         <Grid container spacing={2}>
           {producers.map(producer => (
-            <Grid item xs={12} sm={6} md={4} lg={3} xl={2} >
+            <Grid key={producer.id} item xs={12} sm={6} md={4} lg={3} xl={2} >
               <CardProducer producer={producer} />
             </Grid>
           ))}
