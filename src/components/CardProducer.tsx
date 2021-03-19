@@ -30,7 +30,7 @@ const useStyles = makeStyles({
     height: 90,
     borderRadius: '50%',
     border: '1px solid #EBEBEB',
-    padding: '10px'
+    padding: '0'
   },
   info: {
     padding: '0 1rem',

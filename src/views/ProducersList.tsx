@@ -24,7 +24,6 @@ function ProducersList() {
   const classes = useStyles();
   const { producers } = useContext(AppContext);
 
-
   return (
     <Box
       display="flex"

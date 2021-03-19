@@ -1,6 +1,6 @@
 import { Box, Breadcrumbs, Container, Grid, Link, Typography } from "@material-ui/core";
 import { createStyles, makeStyles, Theme } from '@material-ui/core/styles';
-import { default as React, useContext, useEffect } from "react";
+import { default as React, useContext } from "react";
 import { useHistory } from "react-router";
 import CardProduct from "../components/CardProduct";
 import { AppContext } from "../utils/context/AppContext";
@@ -27,7 +27,8 @@ export function ProductList() {
 
   const { products, producer } = useContext(AppContext);
 
-  function handleBack() {
+  function handleBack(event: React.SyntheticEvent) {
+    event.preventDefault();
     history.push('/');
   }
 
@@ -39,7 +40,7 @@ export function ProductList() {
       <Container maxWidth="xl">
 
         <Breadcrumbs aria-label="breadcrumb" className={classes.title}>
-          <Link color="inherit" href="/" onClick={handleBack}>Lista de produtores</Link>
+          <Link color="inherit" href="/" onClick={(event: React.SyntheticEvent) => handleBack(event)}>Lista de produtores</Link>
           <Typography color="textPrimary">{producer.name}</Typography>
         </Breadcrumbs>
 

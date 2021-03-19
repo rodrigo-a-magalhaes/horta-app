@@ -1,6 +1,7 @@
 import { ReactNode } from "react";
 import { makeStyles } from '@material-ui/core';
 import TopBar from "./TopBar";
+import { LoadingPage } from "../components/LoadingPage";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -41,6 +42,7 @@ export function MainLayout({ children }: MainLayoutProps) {
       <div className={classes.wrapper}>
         <div className={classes.contentContainer}>
           <div className={classes.content}>
+            <LoadingPage />
             {children}
           </div>
         </div>

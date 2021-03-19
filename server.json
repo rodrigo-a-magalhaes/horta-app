@@ -2,51 +2,37 @@
   "producers": [
     {
       "id": 1,
-      "thumb": "./static/banana-p-500.jpeg",
-      "name": "Horta LTDA",
-      "description": "Melhor hortifruti de Uberlândia",
+      "thumb": "./static/logo/agriculture-nat.jpg",
+      "name": "Agriculture Nat LTDA",
+      "description": "Melhor hortifruti da região",
       "category": "horta.app"
     },
     {
       "id": 2,
-      "thumb": "./static/banana-p-500.jpeg",
-      "name": "Rio Hortifrut LTDA",
-      "description": "Melhor hortifruti de Uberlândia",
+      "thumb": "./static/logo/agriculture.jpg",
+      "name": "Agro Agriculture LTDA",
+      "description": "Melhores produtos para você",
       "category": "Rio.app"
     },
     {
       "id": 3,
-      "thumb": "./static/banana-p-500.jpeg",
-      "name": "Pedro LTDA",
-      "description": "Melhor hortifruti de Uberlândia",
+      "thumb": "./static/logo/eco-house.jpg",
+      "name": "Eco House LTDA",
+      "description": "Produtos naturais",
       "category": "horta.app"
     },
     {
       "id": 4,
-      "thumb": "./static/banana-p-500.jpeg",
-      "name": "Conzassa LTDA",
-      "description": "This is some text inside of a div block.",
+      "thumb": "./static/logo/wind-mill.jpg",
+      "name": "Wind Mill LTDA",
+      "description": "Milho de qualidade",
       "category": "horta.app"
     },
     {
       "id": 5,
-      "thumb": "./static/banana-p-500.jpeg",
-      "name": "Martins LTDA",
-      "description": "This is some text inside of a div block.",
-      "category": "horta.app"
-    },
-    {
-      "id": 6,
-      "thumb": "./static/banana-p-500.jpeg",
-      "name": "Horta Martins LTDA",
-      "description": "This is some text inside of a div block.",
-      "category": "horta.app"
-    },
-    {
-      "id": 7,
-      "thumb": "./static/banana-p-500.jpeg",
-      "name": "Horta Legal LTDA",
-      "description": "This is some text inside of a div block.",
+      "thumb": "./static/logo/wood-cabin.jpg",
+      "name": "Wood Cabin LTDA",
+      "description": "Produtos da roça para sua mesa",
       "category": "horta.app"
     }
   ],
@@ -54,82 +40,224 @@
     {
       "id": 1,
       "ref_id": 1,
-      "thumb": "./static/banana-p-500,jpeg",
+      "thumb": "./static/product/banana.jpg",
       "name": "Banana Nanica Kg",
       "description": "Melhor fruta",
-      "price": "R$ 11.50"
+      "price": "R$ 11,50"
     },
     {
       "id": 2,
       "ref_id": 1,
-      "thumb": "./static/banana-p-500,jpeg",
-      "name": "Horta LTDA",
+      "thumb": "./static/product/alface.jpg",
+      "name": "Alface Americano",
       "description": "This is some text inside of a div block.",
-      "price": "R$ 2.50"
+      "price": "R$ 4,00"
     },
     {
       "id": 3,
       "ref_id": 1,
-      "thumb": "./static/banana-p-500,jpeg",
-      "name": "Horta LTDA",
+      "thumb": "./static/product/tomate.jpg",
+      "name": "Tomate",
       "description": "This is some text inside of a div block.",
-      "price": "R$ 7.50"
+      "price": "R$ 12,00"
     },
     {
       "id": 4,
       "ref_id": 1,
-      "thumb": "./static/banana-p-500,jpeg",
-      "name": "Horta LTDA",
+      "thumb": "./static/product/laranja.jpg",
+      "name": "Laranja",
       "description": "This is some text inside of a div block.",
-      "price": "R$ 2.50"
+      "price": "R$ 5,00"
     },
     {
       "id": 5,
       "ref_id": 1,
-      "thumb": "./static/banana-p-500,jpeg",
-      "name": "Horta LTDA",
+      "thumb": "./static/product/maca.jpg",
+      "name": "Maça",
       "description": "This is some text inside of a div block.",
-      "price": "1.50"
+      "price": "3,50"
     },
     {
       "id": 6,
       "ref_id": 1,
-      "thumb": "./static/banana-p-500,jpeg",
-      "name": "Horta LTDA",
+      "thumb": "./static/product/couve.jpg",
+      "name": "Couve",
       "description": "This is some text inside of a div block.",
-      "price": "R$ 1.10"
+      "price": "R$ 1,90"
     },
     {
       "id": 7,
       "ref_id": 1,
-      "thumb": "./static/banana-p-500,jpeg",
-      "name": "Horta LTDA",
+      "thumb": "./static/product/limao.jpg",
+      "name": "Limão",
       "description": "This is some text inside of a div block.",
-      "price": "R$ 0.20"
+      "price": "R$ 3,90"
     },
+
+
+
+
+
     {
       "id": 8,
-      "ref_id": 1,
-      "thumb": "./static/banana-p-500,jpeg",
-      "name": "Horta LTDA",
-      "description": "This is some text inside of a div block.",
-      "price": "R$ 0.50"
+      "ref_id": 2,
+      "thumb": "./static/product/banana.jpg",
+      "name": "Banana Nanica Kg",
+      "description": "Melhor fruta",
+      "price": "R$ 11,50"
     },
     {
       "id": 9,
-      "ref_id": 1,
-      "thumb": "./static/banana-p-500,jpeg",
-      "name": "Horta LTDA",
+      "ref_id": 2,
+      "thumb": "./static/product/laranja.jpg",
+      "name": "Laranja",
       "description": "This is some text inside of a div block.",
-      "price": "R$ 3.50"
+      "price": "R$ 5,00"
     },
     {
       "id": 10,
-      "ref_id": 1,
-      "thumb": "./static/banana-p-500,jpeg",
-      "name": "Horta LTDA",
+      "ref_id": 2,
+      "thumb": "./static/product/alface.jpg",
+      "name": "Alface Americano",
       "description": "This is some text inside of a div block.",
-      "price": "R$ 2.50"
+      "price": "R$ 4,00"
+    },
+    {
+      "id": 11,
+      "ref_id": 2,
+      "thumb": "./static/product/maca.jpg",
+      "name": "Maça",
+      "description": "This is some text inside of a div block.",
+      "price": "3,50"
+    },
+    {
+      "id": 12,
+      "ref_id": 2,
+      "thumb": "./static/product/tomate.jpg",
+      "name": "Tomate",
+      "description": "This is some text inside of a div block.",
+      "price": "R$ 12,00"
+    },
+    {
+      "id": 13,
+      "ref_id": 2,
+      "thumb": "./static/product/couve.jpg",
+      "name": "Couve",
+      "description": "This is some text inside of a div block.",
+      "price": "R$ 1,90"
+    },
+
+
+    {
+      "id": 14,
+      "ref_id": 3,
+      "thumb": "./static/product/maca.jpg",
+      "name": "Maça",
+      "description": "This is some text inside of a div block.",
+      "price": "3,50"
+    },
+    {
+      "id": 15,
+      "ref_id": 3,
+      "thumb": "./static/product/banana.jpg",
+      "name": "Banana Nanica Kg",
+      "description": "Melhor fruta",
+      "price": "R$ 11,50"
+    },
+    {
+      "id": 16,
+      "ref_id": 3,
+      "thumb": "./static/product/alface.jpg",
+      "name": "Alface Americano",
+      "description": "This is some text inside of a div block.",
+      "price": "R$ 4,00"
+    },
+    {
+      "id": 17,
+      "ref_id": 3,
+      "thumb": "./static/product/tomate.jpg",
+      "name": "Tomate",
+      "description": "This is some text inside of a div block.",
+      "price": "R$ 12,00"
+    },
+
+
+
+    {
+      "id": 18,
+      "ref_id": 4,
+      "thumb": "./static/product/maca.jpg",
+      "name": "Maça",
+      "description": "This is some text inside of a div block.",
+      "price": "3,50"
+    },
+    {
+      "id": 19,
+      "ref_id": 4,
+      "thumb": "./static/product/tomate.jpg",
+      "name": "Tomate",
+      "description": "This is some text inside of a div block.",
+      "price": "R$ 12,00"
+    },
+    {
+      "id": 20,
+      "ref_id": 4,
+      "thumb": "./static/product/banana.jpg",
+      "name": "Banana Nanica Kg",
+      "description": "Melhor fruta",
+      "price": "R$ 11,50"
+    },
+    {
+      "id": 21,
+      "ref_id": 4,
+      "thumb": "./static/product/limao.jpg",
+      "name": "Limão",
+      "description": "This is some text inside of a div block.",
+      "price": "R$ 3,90"
+    },
+    {
+      "id": 22,
+      "ref_id": 4,
+      "thumb": "./static/product/couve.jpg",
+      "name": "Couve",
+      "description": "This is some text inside of a div block.",
+      "price": "R$ 1,90"
+    },
+
+
+
+    {
+      "id": 23,
+      "ref_id": 5,
+      "thumb": "./static/product/banana.jpg",
+      "name": "Banana Nanica Kg",
+      "description": "Melhor fruta",
+      "price": "R$ 11,50"
+    },
+    {
+      "id": 24,
+      "ref_id": 5,
+      "thumb": "./static/product/alface.jpg",
+      "name": "Alface Americano",
+      "description": "This is some text inside of a div block.",
+      "price": "R$ 4,00"
+    },
+    {
+      "id": 25,
+      "ref_id": 5,
+      "thumb": "./static/product/tomate.jpg",
+      "name": "Tomate",
+      "description": "This is some text inside of a div block.",
+      "price": "R$ 12,00"
+    },
+    {
+      "id": 26,
+      "ref_id": 5,
+      "thumb": "./static/product/limao.jpg",
+      "name": "Limão",
+      "description": "This is some text inside of a div block.",
+      "price": "R$ 3,90"
     }
+
   ]
 }

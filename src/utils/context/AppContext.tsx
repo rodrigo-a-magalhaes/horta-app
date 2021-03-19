@@ -23,6 +23,7 @@ export interface ProductProps {
 }
 
 interface AppContextData {
+  loadingPage: boolean;
   producers: ProducerProps[],
   producer: ProducerProps,
   products: ProductProps[],
@@ -33,26 +34,33 @@ interface AppContextData {
 export const AppContext = createContext({} as AppContextData);
 export function AppProvider({ children }: AppProviderProps) {
 
+  const [loadingPage, setLoadingPage] = useState<boolean>(false);
+
   const [producers, setProducers] = useState<ProducerProps[]>([]);
   const [producer, setProducer] = useState<ProducerProps>({} as ProducerProps);
 
   const [products, setProducts] = useState<ProductProps[]>([]);
 
   useEffect(() => {
+    setLoadingPage(true);
     api.get<ProducerProps[]>('producers').then(response => {
       setProducers(response.data);
+      setLoadingPage(false);
     });
   }, []);
 
   useEffect(() => {
+    setLoadingPage(true);
     api.get<ProductProps[]>(`product/?ref_id=${producer.id}`)
       .then(Response => {
         setProducts(Response.data);
+        setLoadingPage(false);
       });
   }, [producer]);
 
   return (
     <AppContext.Provider value={{
+      loadingPage,
       producers,
       producer,
       products,

@@ -103,7 +103,7 @@ export default function CardProduct({ product }: CardProductProps) {
       </div>
       <CardContent>
         <div className={classes.thumb}>
-          <img className={classes.thumbImg} src="./static/banana-p-500.jpeg" alt="" />
+          <img className={classes.thumbImg} src={product.thumb} alt={product.name} />
         </div>
         <div className={classes.info}>
           <Typography className={classes.price} variant="h4" component="h2">{product.price}</Typography>
