@@ -13,7 +13,7 @@ function Routes() {
       <Router>
         <Switch>
           <MainRoute exact path="/" component={<ProducersList />} />
-          <MainRoute exact path="/pedro" component={<ProductList />} />
+          <MainRoute exact path="/:id" component={<ProductList />} />
           <Route exact path="*" component={NotFoundView} />
         </Switch>
       </Router>

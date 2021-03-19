@@ -1,0 +1,135 @@
+{
+  "producers": [
+    {
+      "id": 1,
+      "thumb": "./static/banana-p-500.jpeg",
+      "name": "Horta LTDA",
+      "description": "Melhor hortifruti de Uberlândia",
+      "category": "horta.app"
+    },
+    {
+      "id": 2,
+      "thumb": "./static/banana-p-500.jpeg",
+      "name": "Rio Hortifrut LTDA",
+      "description": "Melhor hortifruti de Uberlândia",
+      "category": "Rio.app"
+    },
+    {
+      "id": 3,
+      "thumb": "./static/banana-p-500.jpeg",
+      "name": "Pedro LTDA",
+      "description": "Melhor hortifruti de Uberlândia",
+      "category": "horta.app"
+    },
+    {
+      "id": 4,
+      "thumb": "./static/banana-p-500.jpeg",
+      "name": "Conzassa LTDA",
+      "description": "This is some text inside of a div block.",
+      "category": "horta.app"
+    },
+    {
+      "id": 5,
+      "thumb": "./static/banana-p-500.jpeg",
+      "name": "Martins LTDA",
+      "description": "This is some text inside of a div block.",
+      "category": "horta.app"
+    },
+    {
+      "id": 6,
+      "thumb": "./static/banana-p-500.jpeg",
+      "name": "Horta Martins LTDA",
+      "description": "This is some text inside of a div block.",
+      "category": "horta.app"
+    },
+    {
+      "id": 7,
+      "thumb": "./static/banana-p-500.jpeg",
+      "name": "Horta Legal LTDA",
+      "description": "This is some text inside of a div block.",
+      "category": "horta.app"
+    }
+  ],
+  "product": [
+    {
+      "id": 1,
+      "ref_id": 1,
+      "thumb": "./static/banana-p-500,jpeg",
+      "name": "Banana Nanica Kg",
+      "description": "Melhor fruta",
+      "price": "R$ 11.50"
+    },
+    {
+      "id": 2,
+      "ref_id": 1,
+      "thumb": "./static/banana-p-500,jpeg",
+      "name": "Horta LTDA",
+      "description": "This is some text inside of a div block.",
+      "price": "R$ 2.50"
+    },
+    {
+      "id": 3,
+      "ref_id": 1,
+      "thumb": "./static/banana-p-500,jpeg",
+      "name": "Horta LTDA",
+      "description": "This is some text inside of a div block.",
+      "price": "R$ 7.50"
+    },
+    {
+      "id": 4,
+      "ref_id": 1,
+      "thumb": "./static/banana-p-500,jpeg",
+      "name": "Horta LTDA",
+      "description": "This is some text inside of a div block.",
+      "price": "R$ 2.50"
+    },
+    {
+      "id": 5,
+      "ref_id": 1,
+      "thumb": "./static/banana-p-500,jpeg",
+      "name": "Horta LTDA",
+      "description": "This is some text inside of a div block.",
+      "price": "1.50"
+    },
+    {
+      "id": 6,
+      "ref_id": 1,
+      "thumb": "./static/banana-p-500,jpeg",
+      "name": "Horta LTDA",
+      "description": "This is some text inside of a div block.",
+      "price": "R$ 1.10"
+    },
+    {
+      "id": 7,
+      "ref_id": 1,
+      "thumb": "./static/banana-p-500,jpeg",
+      "name": "Horta LTDA",
+      "description": "This is some text inside of a div block.",
+      "price": "R$ 0.20"
+    },
+    {
+      "id": 8,
+      "ref_id": 1,
+      "thumb": "./static/banana-p-500,jpeg",
+      "name": "Horta LTDA",
+      "description": "This is some text inside of a div block.",
+      "price": "R$ 0.50"
+    },
+    {
+      "id": 9,
+      "ref_id": 1,
+      "thumb": "./static/banana-p-500,jpeg",
+      "name": "Horta LTDA",
+      "description": "This is some text inside of a div block.",
+      "price": "R$ 3.50"
+    },
+    {
+      "id": 10,
+      "ref_id": 1,
+      "thumb": "./static/banana-p-500,jpeg",
+      "name": "Horta LTDA",
+      "description": "This is some text inside of a div block.",
+      "price": "R$ 2.50"
+    }
+  ]
+}

@@ -1,7 +1,8 @@
 import { Box, Container, Grid, Typography } from "@material-ui/core";
 import { createStyles, makeStyles, Theme } from '@material-ui/core/styles';
-import { default as React } from "react";
+import { default as React, useContext } from "react";
 import CardProducer from "../components/CardProducer";
+import { AppContext } from "../utils/context/AppContext";
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -20,8 +21,9 @@ const useStyles = makeStyles((theme: Theme) =>
 );
 
 function ProducersList() {
-
   const classes = useStyles();
+  const { producers } = useContext(AppContext);
+
 
   return (
     <Box
@@ -33,47 +35,14 @@ function ProducersList() {
           Produtores recomendados
         </Typography>
         <Grid container spacing={2}>
-          <Grid item xs={12} sm={6} md={4} lg={3} xl={2} >
-            <CardProducer />
-          </Grid>
-          <Grid item xs={12} sm={6} md={4} lg={3} xl={2} >
-            <CardProducer />
-          </Grid>
-          <Grid item xs={12} sm={6} md={4} lg={3} xl={2} >
-            <CardProducer />
-          </Grid>
-          <Grid item xs={12} sm={6} md={4} lg={3} xl={2} >
-            <CardProducer />
-          </Grid>
-          <Grid item xs={12} sm={6} md={4} lg={3} xl={2}>
-            <CardProducer />
-          </Grid>
+          {producers.map(producer => (
+            <Grid item xs={12} sm={6} md={4} lg={3} xl={2} >
+              <CardProducer producer={producer} />
+            </Grid>
+          ))}
         </Grid>
       </Container>
     </Box>
-
-
-    // <div >
-    //   <Typography variant="h5" component="h2">
-    //     Produtores recomendados
-    //   </Typography>
-    //   <div className={classes.root}>
-    //     <Grid container spacing={3}>
-    //       <Grid item xs={12}>
-    //         <CardProducer />
-    //       </Grid>
-    //       <Grid item xs={4}>
-    //         <CardProducer />
-    //       </Grid>
-    //       <Grid item xs={4}>
-    //         <CardProducer />
-    //       </Grid>
-    //       <Grid item xs={4}>
-    //         <CardProducer />
-    //       </Grid>
-    //     </Grid>
-    //   </div>
-    // </div>
   );
 }
 export default ProducersList;

@@ -7,6 +7,7 @@ import React, { useState } from 'react';
 import AddIcon from '@material-ui/icons/Add';
 import DeleteIcon from '@material-ui/icons/Delete';
 import RemoveIcon from '@material-ui/icons/Remove';
+import { ProductProps } from '../utils/context/AppContext';
 
 const useStyles = makeStyles({
   root: {
@@ -66,14 +67,18 @@ const useStyles = makeStyles({
   }
 });
 
-export default function CardProduct() {
+interface CardProductProps {
+  product: ProductProps
+}
+
+export default function CardProduct({ product }: CardProductProps) {
   const classes = useStyles();
   const [item, setItem] = useState(0);
 
   function handleAddItem() {
     setItem(item + 1);
   }
-  
+
   function handleRemoveItem() {
     setItem(item - 1);
   }
@@ -101,8 +106,8 @@ export default function CardProduct() {
           <img className={classes.thumbImg} src="./static/banana-p-500.jpeg" alt="" />
         </div>
         <div className={classes.info}>
-          <Typography className={classes.price} variant="h4" component="h2">R$ 1,50</Typography>
-          <Typography className={classes.name} variant="body2" component="p">Banana Nanica Kg</Typography>
+          <Typography className={classes.price} variant="h4" component="h2">{product.price}</Typography>
+          <Typography className={classes.name} variant="body2" component="p">{product.name}</Typography>
           <Typography className={classes.alert} variant="body2" component="p">*ATENÇÃO O PREÇO ACIMA É REFERENTE À 1 KILO DO PRODUTO</Typography>
         </div>
       </CardContent>

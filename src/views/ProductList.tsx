@@ -1,8 +1,9 @@
 import { Box, Breadcrumbs, Container, Grid, Link, Typography } from "@material-ui/core";
 import { createStyles, makeStyles, Theme } from '@material-ui/core/styles';
-import { default as React } from "react";
+import { default as React, useContext, useEffect } from "react";
 import { useHistory } from "react-router";
 import CardProduct from "../components/CardProduct";
+import { AppContext } from "../utils/context/AppContext";
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -24,7 +25,9 @@ export function ProductList() {
   const classes = useStyles();
   const history = useHistory();
 
-  function handleBack(){
+  const { products, producer } = useContext(AppContext);
+
+  function handleBack() {
     history.push('/');
   }
 
@@ -37,50 +40,18 @@ export function ProductList() {
 
         <Breadcrumbs aria-label="breadcrumb" className={classes.title}>
           <Link color="inherit" href="/" onClick={handleBack}>Lista de produtores</Link>
-          <Typography color="textPrimary">Pedro LTDA</Typography>
+          <Typography color="textPrimary">{producer.name}</Typography>
         </Breadcrumbs>
 
         <Grid container spacing={2}>
-          <Grid item xs={12} sm={6} md={4} lg={3} xl={2} >
-            <CardProduct />
-          </Grid>
-          <Grid item xs={12} sm={6} md={4} lg={3} xl={2} >
-            <CardProduct />
-          </Grid>
-          <Grid item xs={12} sm={6} md={4} lg={3} xl={2} >
-            <CardProduct />
-          </Grid>
-          <Grid item xs={12} sm={6} md={4} lg={3} xl={2} >
-            <CardProduct />
-          </Grid>
-          <Grid item xs={12} sm={6} md={4} lg={3} xl={2}>
-            <CardProduct />
-          </Grid>
+          {products.map(product => (
+            <Grid item xs={12} sm={6} md={4} lg={3} xl={2} >
+              <CardProduct product={product} />
+            </Grid>
+          ))}
         </Grid>
+
       </Container>
     </Box>
-
-
-    // <div >
-    //   <Typography variant="h5" component="h2">
-    //     Produtores recomendados
-    //   </Typography>
-    //   <div className={classes.root}>
-    //     <Grid container spacing={3}>
-    //       <Grid item xs={12}>
-    //         <CardProducer />
-    //       </Grid>
-    //       <Grid item xs={4}>
-    //         <CardProducer />
-    //       </Grid>
-    //       <Grid item xs={4}>
-    //         <CardProducer />
-    //       </Grid>
-    //       <Grid item xs={4}>
-    //         <CardProducer />
-    //       </Grid>
-    //     </Grid>
-    //   </div>
-    // </div>
   );
 }

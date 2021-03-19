@@ -2,8 +2,9 @@ import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import { makeStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
-import React from 'react';
+import React, { useContext } from 'react';
 import { useHistory } from 'react-router';
+import { AppContext, ProducerProps } from '../utils/context/AppContext';
 import { IconVerify } from './IconsSVG';
 
 const useStyles = makeStyles({
@@ -45,27 +46,33 @@ const useStyles = makeStyles({
   }
 });
 
-export default function CardProducer() {
+interface CardProducerProps {
+  producer: ProducerProps
+}
+
+export default function CardProducer({ producer }: CardProducerProps) {
   const classes = useStyles();
   const history = useHistory();
+  const { setProducer } = useContext(AppContext);
 
-  function handleButton() {
-    history.push('/pedro')
+  function handleProduct(producer: ProducerProps) {
+    setProducer(producer);
+    history.push(`/${producer.id}`);
   }
 
   return (
-    <Card className={classes.root} onClick={handleButton}>
+    <Card className={classes.root} onClick={() => { handleProduct(producer) }}>
       <CardContent className={classes.content}>
         <div className={classes.thumb}>
-          <img className={classes.thumbImg} src="./static/banana-p-500.jpeg" alt="" />
+          <img className={classes.thumbImg} src={producer.thumb} alt={producer.name} />
         </div>
         <div className={classes.info}>
           <div className={classes.title}>
-            <Typography variant="h4" component="h2">HORTA LTDA</Typography>
+            <Typography variant="h4" component="h2">{producer.name}</Typography>
             <IconVerify />
           </div>
-          <Typography className={classes.p} variant="body2" component="p">Melhor hortifruti de Uberlândia</Typography>
-          <Typography className={classes.p} variant="subtitle1" component="p">Horta.app</Typography>
+          <Typography className={classes.p} variant="body2" component="p">{producer.description}</Typography>
+          <Typography className={classes.p} variant="subtitle1" component="p">{producer.category}</Typography>
         </div>
       </CardContent>
     </Card>
