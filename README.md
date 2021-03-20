@@ -10,7 +10,7 @@
 
 ## Imagens do Projeto
 <p align="center">
-  <img src="https://github.com/rodrigo-a-magalhaes/horta-app/blob/main/github/Horta-App.gif?raw=true">
+  <img src="https://github.com/rodrigo-a-magalhaes/horta-app/blob/master/github/Horta-App.gif?raw=true">
 </p>
 
 ## Install
